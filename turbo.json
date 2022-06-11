@@ -17,6 +17,13 @@
       "dependsOn": ["^build"],
       "outputs": [],
       "cache": false
+    },
+    "pkg:version": {
+      "outputs": [],
+      "cache": false
+    },
+    "pkg:publish": {
+      "outputs": []
     }
   }
 }

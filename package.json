@@ -9,10 +9,9 @@
   "sideEffects": false,
   "scripts": {
     "dev": "turbo run dev",
-    "build": "turbo run build",
+    "build": "turbo run build --concurrency=1",
     "test:watch": "turbo run test:watch",
-    "test": "turbo run test",
-    "version": "turbo run version"
+    "test": "turbo run test --concurrency=1"
   },
   "devDependencies": {
     "@parcel/packager-ts": "2.6.0",
