@@ -1,7 +1,7 @@
 {
   "name": "@tknf/i18n",
   "description": "Internationalization utilities",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "tknf",
     "nodejs"
@@ -30,7 +30,9 @@
     "build": "parcel build --no-cache",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "version": "yarn version"
+    "prepublishOnly": "yarn build",
+    "pkg:version": "yarn version",
+    "pkg:publish": "npm publish"
   },
   "devDependencies": {},
   "dependencies": {},
