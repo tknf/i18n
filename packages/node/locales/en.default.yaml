@@ -1,0 +1,4 @@
+Form:
+  Errors:
+    String: "Invalid format"
+    Email: "Invalid email ({email})"

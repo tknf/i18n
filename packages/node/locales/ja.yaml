@@ -1,0 +1,4 @@
+Form:
+  Errors:
+    String: "不正な形式です"
+    Email: "入力されたメールアドレス({email})は不正な形式です"

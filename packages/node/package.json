@@ -1,0 +1,53 @@
+{
+  "name": "@tknf/node-i18n",
+  "description": "Internationalization utilities for Node.js",
+  "version": "0.1.0",
+  "keywords": [
+    "tknf",
+    "i18n",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "author": "TKNF <development@tknf.net>",
+  "homepage": "https://github.com/tknf/i18n",
+  "repository": "https://github.com/tknf/i18n",
+  "bugs": {
+    "url": "https://github.com/tknf/i18n/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "parcel watch",
+    "build": "parcel build --no-cache",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "version": "yarn version"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@tknf/i18n": "^0.1.0",
+    "fs-extra": "^10.1.0",
+    "yaml": "^2.1.1"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/?(*.)+(test).+(ts|tsx|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  }
+}
